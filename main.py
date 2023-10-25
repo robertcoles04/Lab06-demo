@@ -6,7 +6,7 @@ def main():
             password = input("Please enter your password to encode: ")
             password = encode(password)
             print("Your password has been encoded and stored!")
-        
+
 
 
 def encode(password):
