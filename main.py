@@ -3,14 +3,16 @@ def main():
         menu()
         x = int(input("Please enter an option: "))
         if x == 1:
-            password = int(input("Please enter your password to encode: "))
-            print(encode(password))
+            password = input("Please enter your password to encode: ")
+            password = encode(password)
+            print("Your password has been encoded and stored!")
+        
 
 
 def encode(password):
     list = ""
     for i in password:
-        i = i
+        i = int(i)
         i += 3
         if i >= 10:
             i -= 10
