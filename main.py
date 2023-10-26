@@ -26,6 +26,8 @@ def decode(password):
     for i in password:
         i = int(i)
         i -= 3
+        if i <= 0:
+            i += 10
         list += str(i)
     return list
 
